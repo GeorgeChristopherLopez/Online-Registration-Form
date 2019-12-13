@@ -1,0 +1,234 @@
+root {
+    --main-green: #44B0B8;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+       
+}
+html {
+    max-height: 100%;
+    max-width: 100%;
+}
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: center;
+
+    max-height: 100%;
+    max-width: 100%;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+.container{
+    padding: 5%;
+
+}
+
+
+hr { 
+    color: black;
+    background: black;
+    border: none;
+    height: .125rem;
+    margin: .25rem 0;
+
+
+}
+hr.dbl{
+    height: .25rem;
+    
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+form
+{
+    text-align: left;
+  
+}
+legend{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+fieldset {
+    border: none;
+}
+.contact-info, .newsletter  {
+   margin: 1rem 0;
+    width: 100%;
+
+  
+   
+}
+
+.contact-info label {
+   
+    padding: 5% 5% 5% 1%;
+}
+
+    .contact-info input {
+        width: 95%;
+        height: 2rem;
+        background: #EFF0F3;
+        border: none;
+        border-radius: .75rem;
+        padding: .5rem;
+        text-align: right;
+    }
+
+    
+
+    .contact-info select, .contact-info option {
+        width: 100%;
+        height: 3.5rem;
+        background: #EFF0F3;
+        border: none;
+        border-radius: .75rem;
+    }
+        .contact-info select:focus, .contact-info option:focus{
+            outline: none;
+            border: solid 2px lightblue;
+
+        }
+
+
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    padding-right: .5rem;
+    
+}
+
+:-moz-placeholder {
+    font-style: italic;
+    padding-right: .5rem;
+    
+}
+
+::-moz-placeholder {
+    font-style: italic;
+    padding-right: .5rem;
+   
+}
+
+:-ms-input-placeholder {
+    font-style: italic;
+    padding-right: .5rem;
+   
+}
+
+        .contact-info input:focus{
+            text-align: left;
+            border: solid 2px lightblue;
+            border-radius: .75rem;
+            padding: .5rem;
+            outline: none;
+        }
+
+        
+
+    /*checkbox styling*/
+.checkbox {
+    -webkit-appearance: none;
+    background: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+   padding: .5rem;
+   
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    outline: none;
+}
+    .checkbox:checked:after {
+        content: '\2714';
+        font-size: 14px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        text-align: center;
+        color: white;
+        background: #065FD4;
+    }
+
+
+.newsletter li{
+    padding: 1rem 0;
+}
+
+.newsletter label{
+    padding-left: 1rem;
+}
+
+
+.textarea label{
+    padding: 0;
+
+}
+
+textarea {
+    /*box the text area*/
+    max-width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #EFF0F3;
+    width: 100%;
+    margin: .5rem 0;
+}
+.btn {
+    text-align: center;
+    width: 100%;
+    padding: 1rem ;
+    background-color: #01ADB9;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 1.5rem;
+    }
+
+footer{
+    padding: 1rem;
+    font-style: italic;
+    margin-bottom: 10%;
+}
+/* DESKTOP */
+@media screen and (min-width: 768px){
+    .contact-info {
+        grid-template-columns: 1fr 3fr;
+        grid-gap: .5rem;
+       
+    }
+    .contact-info select{
+        width: 97.75%;
+    }
+   .container{
+       width: 60%;
+       margin: auto;
+       padding: 3% 0;
+   }
+
+
+}
+
